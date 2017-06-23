@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="677.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Vista.V07ModificarClienteController">
+   <children>
+      <TableView fx:id="table" layoutX="30.0" layoutY="34.0" prefHeight="312.0" prefWidth="686.0" style="-fx-background-radius: 2;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <columns>
+            <TableColumn fx:id="colum_nombre" editable="false" minWidth="50.0" prefWidth="184.0" sortable="false" text="Nombre" />
+            <TableColumn fx:id="colum_apellido" editable="false" minWidth="50.0" prefWidth="169.0" sortable="false" text="Apellido" />
+            <TableColumn fx:id="colum_boton_eliminar" editable="false" minWidth="50.0" prefWidth="70.0" resizable="false" sortable="false" text="Eliminar" />
+            <TableColumn fx:id="colum_boton_modifcar" editable="false" minWidth="50.0" prefWidth="75.0" resizable="false" sortable="false" text="Modificar" />
+            <TableColumn fx:id="colum_estado" editable="false" minWidth="34.0" prefWidth="117.0" sortable="false" text="Estado" />
+            <TableColumn fx:id="colum_municipio" editable="false" minWidth="48.0" prefWidth="119.0" sortable="false" text="Municipio" />
+            <TableColumn fx:id="colum_colonia" editable="false" minWidth="50.0" prefWidth="111.0" sortable="false" text="Colonia" />
+            <TableColumn fx:id="colum_calle" editable="false" minWidth="50.0" prefWidth="110.0" sortable="false" text="Calle" />
+            <TableColumn fx:id="colum_num_int" editable="false" minWidth="37.0" prefWidth="111.0" sortable="false" text="Num. Int." />
+            <TableColumn fx:id="colum_num_ext" editable="false" minWidth="34.0" prefWidth="109.0" sortable="false" text="Num. Ext." />
+            <TableColumn fx:id="colum_cp" editable="false" minWidth="47.0" prefWidth="85.0" sortable="false" text="C.P" />
+            <TableColumn fx:id="colum_rfc" editable="false" minWidth="50.0" prefWidth="109.0" sortable="false" text="RFC" />
+            <TableColumn fx:id="colum_correo" editable="false" minWidth="50.0" prefWidth="188.0" sortable="false" text="Correo Electronico" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

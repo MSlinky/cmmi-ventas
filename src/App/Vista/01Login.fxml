@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="297.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Vista.V01Login">
+   <children>
+      <Label layoutX="83.0" layoutY="14.0" lineSpacing="2.0" text="Ventas" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="42.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Group layoutX="49.0" layoutY="103.0">
+         <children>
+            <JFXTextField id="txt_usuario" fx:id="txt_usuario" focusColor="WHITE" labelFloat="true" promptText="Correo" style="-fx-text-fill: white;" unFocusColor="#d9d9d9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fx:id="cross_correo" fitHeight="23.0" fitWidth="16.0" layoutX="212.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../Public/cancelar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="49.0" layoutY="178.0">
+         <children>
+            <ImageView fx:id="cross_pass" fitHeight="23.0" fitWidth="16.0" layoutX="212.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../Public/cancelar.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField id="txt_pass" fx:id="txt_pass" accessibleRole="TEXT_FIELD" focusColor="WHITE" labelFloat="true" promptText="Contraseña" style="-fx-text-fill: white;" unFocusColor="#d9d9d9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </Group>
+      <JFXButton fx:id="btn_iniciar" buttonType="RAISED" layoutX="89.0" layoutY="271.0" onAction="#IniciarSesion" prefHeight="44.0" prefWidth="121.0" ripplerFill="#9db4c0" style="-fx-background-color: #fff;" text="Iniciar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

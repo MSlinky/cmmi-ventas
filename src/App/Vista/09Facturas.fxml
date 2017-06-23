@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="760.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Vista.V09FacturasController">
+   <children>
+      <GridPane alignment="TOP_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="158.0" prefWidth="740.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+          <ColumnConstraints maxWidth="247.0" minWidth="10.0" prefWidth="190.0" />
+            <ColumnConstraints maxWidth="260.0" minWidth="10.0" prefWidth="190.0" />
+            <ColumnConstraints maxWidth="169.0" minWidth="10.0" prefWidth="190.0" />
+            <ColumnConstraints maxWidth="216.0" minWidth="10.0" prefWidth="185.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="54.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="91.0" minHeight="0.0" prefHeight="51.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="139.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label prefHeight="27.0" prefWidth="154.0" text="Datos de cliente">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="cliNombre" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Nombre" unFocusColor="#4059a9" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliApellido" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Apellido" unFocusColor="#4059a9" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliEstado" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Estado" unFocusColor="#4059a9" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliMunicipio" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Municipio" unFocusColor="#4059a9" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliColonia" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Colonia" unFocusColor="#4059a9" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliCalle" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Calle" unFocusColor="#4059a9" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliExt" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Num. Ext" unFocusColor="#4059a9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliInt" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Num. Int" unFocusColor="#4059a9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliPostal" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Codigo postal" unFocusColor="#4059a9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliRFC" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="RFC" unFocusColor="#4059a9" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="cliCorreo" editable="false" focusColor="#405aa8" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="157.0" promptText="Correo electronico" unFocusColor="#4059a9" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <Button fx:id="buscarCliente" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" text="Buscar cliente" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <TableView fx:id="table" layoutX="20.0" layoutY="110.0" prefHeight="217.0" prefWidth="740.0" style="-fx-background-radius: 2;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="178.0">
+         <columns>
+            <TableColumn fx:id="colum_carrito" editable="false" minWidth="50.0" prefWidth="512.0" resizable="false" sortable="false" text="Carrito" />
+            <TableColumn fx:id="colum_cantidad" editable="false" minWidth="0.0" prefWidth="100.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Cantidad" />
+            <TableColumn fx:id="colum_precio" editable="false" minWidth="0.0" prefWidth="103.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Precio" />
+         </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>

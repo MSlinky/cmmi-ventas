@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="465.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Vista.V05RegistrarProducto">
+   <children>
+      <Label alignment="CENTER" layoutX="146.0" layoutY="14.0" prefHeight="48.0" prefWidth="175.0" text="Registrar Producto" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_nombrePro" labelFloat="true" layoutX="72.0" layoutY="84.0" prefHeight="25.0" prefWidth="322.0" promptText="Nombre Producto *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_descripcionPro" labelFloat="true" layoutX="72.0" layoutY="135.0" prefHeight="25.0" prefWidth="322.0" promptText="Descripción *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_codigoPro" labelFloat="true" layoutX="115.0" layoutY="175.0" prefHeight="25.0" prefWidth="237.0" promptText="Código" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_precioPro" labelFloat="true" layoutX="115.0" layoutY="223.0" prefHeight="25.0" prefWidth="237.0" promptText="Precio *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_cantidadPro" labelFloat="true" layoutX="135.0" layoutY="277.0" prefHeight="25.0" prefWidth="197.0" promptText="Cantidad *" style="-fx-text-fill: white;" />
+      <JFXButton fx:id="btn_aceptar" layoutX="56.0" layoutY="339.0" onAction="#RegistrarProducto" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #ffffff;" text="Aceptar" />
+      <JFXButton fx:id="btn_cancelar" layoutX="302.0" layoutY="339.0" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #ffffff;" text="Cancelar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Vista.V04RegistrarCliente">
+   <children>
+      <Label alignment="CENTER" layoutX="213.0" layoutY="14.0" prefHeight="48.0" prefWidth="175.0" text="Registrar Cliente" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_nombre" labelFloat="true" layoutX="15.0" layoutY="95.0" prefHeight="25.0" prefWidth="262.0" promptText="Nombre *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_apellido" labelFloat="true" layoutX="292.0" layoutY="94.0" prefHeight="25.0" prefWidth="294.0" promptText="Apellido *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_calle" labelFloat="true" layoutX="14.0" layoutY="146.0" prefHeight="25.0" prefWidth="347.0" promptText="Calle *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_numExt" labelFloat="true" layoutX="388.0" layoutY="146.0" prefHeight="25.0" prefWidth="89.0" promptText="Num ext *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_numInt" labelFloat="true" layoutX="497.0" layoutY="146.0" prefHeight="25.0" prefWidth="89.0" promptText="Num int" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_municipio" labelFloat="true" layoutX="14.0" layoutY="195.0" prefHeight="25.0" prefWidth="200.0" promptText="Municipio *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_colonia" labelFloat="true" layoutX="258.0" layoutY="195.0" prefHeight="25.0" prefWidth="200.0" promptText="Colonia *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_CP" labelFloat="true" layoutX="497.0" layoutY="195.0" prefHeight="25.0" prefWidth="89.0" promptText="Código postal *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_estado" labelFloat="true" layoutX="14.0" layoutY="238.0" prefHeight="25.0" prefWidth="233.0" promptText="Estado *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_RFC" labelFloat="true" layoutX="300.0" layoutY="238.0" prefHeight="25.0" prefWidth="279.0" promptText="RFC *" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="txt_email" labelFloat="true" layoutX="173.0" layoutY="281.0" prefHeight="25.0" prefWidth="262.0" promptText="Correo electrónico" style="-fx-text-fill: white;" />
+      <JFXButton fx:id="btn_aceptar" layoutX="130.0" layoutY="339.0" onAction="#RegistrarCliente" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #ffffff;" text="Aceptar" />
+      <JFXButton layoutX="376.0" layoutY="339.0" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #ffffff;" text="Cancelar" />
+   </children>
+</AnchorPane>
